@@ -6,8 +6,10 @@ date:   2023-06-15
 categories: modelmesh
 ---
 
-_The following blog was originally posted and revised on [IBM Developer](https://developer.ibm.com/tutorials/awb-get-started-with-kserve-modelmesh-for-multi-model-serving/)._
 
+**_The following tutorial was originally posted on [IBM Developer](https://developer.ibm.com/tutorials/awb-get-started-with-kserve-modelmesh-for-multi-model-serving/)._**
+
+---
 
 [ModelMesh](https://github.com/kserve/modelmesh) is a mature, general-purpose model serving management and routing layer. Optimized for high volume, high density, and frequently changing model use cases, ModelMesh intelligently loads and unloads models to and from memory to strike a balance between responsiveness and compute.
 
