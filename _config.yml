@@ -36,3 +36,13 @@ excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of 
 plugins: [jekyll-paginate]
 exclude: [vendor]
 gems: ["jekyll-gist","jekyll-paginate", "jekyll-sitemap", "rouge"]
+
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: vim
+git:
+  branch: master
