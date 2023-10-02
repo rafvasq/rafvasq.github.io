@@ -21,17 +21,13 @@
 title: Raf's OS Work In Progress
 email: rafvasq21@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is a shared collection of Rafael Vasquez's open source and tech thoughts and content. 
-  
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is a shared collection of Rafael Vasquez's open source and tech thoughts and content.
 url: "https://rafvasq.github.io" # the base hostname & protocol for your site
 twitter_username: rafvasq
 github_username:  rafvasq
 
 # Build settings
-author: Rafael Vasquez
+#author: Rafael Vasquez
 theme: minima
 paginate: 10          # Posts per page on the blog index
 pagination_dir: "/blog/page:num/"  # Directory base for pagination URLs eg. /blog/page/2/
