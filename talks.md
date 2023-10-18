@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Content
-permalink: /content
+title: Talks
+permalink: /talks
 ---
 
 | Type | Name                                                                            	 | Event                        	    | Resources                                       	                                                        |

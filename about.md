@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 Currently, a growing open source software developer and maintainer of [KServe/ModelMesh](https://github.com/kserve/modelmesh-serving).
