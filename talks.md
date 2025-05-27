@@ -14,3 +14,4 @@ permalink: /talks
 | Talk | Prompt Engineering with watsonx                                                     	 | IBM Champions AI Enablement March 2024 | [Summary](https://community.ibm.com/community/user/champions-old/blogs/susan-malaika/2024/02/27/ai-enablement-ibm-digital-self-serve-co-create-exp)  |
 | Workshop | Build AI Assistants with Large Language Models                                                     	 | ODSC East 2024 | [Summary](https://odsc.com/speakers/build-conversational-ai-and-integrate-into-product-page-using-watsonx-assistant/)  |
 | Workshop | Prompt Engineering with IBM watsonx.ai | Dubai GPEC 2024 | [Summary](https://challenge.dub.ai/en/workshops/)  |
+| Workshop | Leveraging Open Source AI Securely and Privately | Devopsdays Geneva 2025 | [Summary](https://devopsdays.org/events/2025-geneva/program/leveraging-open-source-ai-securely-and-privately/)  |
