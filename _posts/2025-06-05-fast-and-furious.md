@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fast Inference, Furious Scaling"
+title:  "Fast Inference and Furious Scaling with vLLM and KServe"
 date:   2025-06-05
 categories: vllm, kserve
 ---
