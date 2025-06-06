@@ -2,7 +2,7 @@
 layout: post
 title:  "Fast Inference and Furious Scaling with vLLM and KServe"
 date:   2025-06-05
-categories: vllm, kserve
+categories: vllm kserve
 ---
 
 _Why serving large language models is hard — and how vLLM + KServe can help beginners get started._
