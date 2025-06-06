@@ -31,9 +31,9 @@ Those top-tier GPUs aren’t just expensive to buy, they’re expensive to opera
 
 Aside from their size, LLMs face technical hurdles under the hood.
 
-- **Tokenization**: Each prompt they receive has to be processed or *tokenized*.
-- **Autoregressive generation**:  LLMs generate *one token at a time*. After predicting a token, that token becomes part of the input to predict the next one. In many cases, compute requirements scale quadratically with the length of a sequence: for instance, if the number of input tokens doubles, the model needs 4 times as much processing power to handle it.
-- **[_Context window_](https://www.ibm.com/think/topics/context-window)**: An LLM's working memory. Every time the model predicts the next token in a sequence, it's computing the relationships between that token and **every token before it**. So, longer prompts and conversation result in slower inference.
+- **[Tokenization](https://www.ibm.com/think/topics/tokenization)**: Each prompt they receive has to be processed or *tokenized*.
+- **[Autoregressive generation](https://www.parlant.io/blog/what-is-autoregression/)**:  LLMs generate *one token at a time*. After predicting a token, that token becomes part of the input to predict the next one. In many cases, compute requirements scale quadratically with the length of a sequence: for instance, if the number of input tokens doubles, the model needs 4 times as much processing power to handle it.
+- **[Context window](https://www.ibm.com/think/topics/context-window)**: An LLM's working memory. Every time the model predicts the next token in a sequence, it's computing the relationships between that token and **every token before it**. So, longer prompts and conversation result in slower inference.
 
 #### _Scaling is hard._
 
