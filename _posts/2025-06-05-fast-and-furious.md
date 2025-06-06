@@ -37,19 +37,17 @@ Aside from their size, LLMs face technical hurdles under the hood.
 
 #### _Scaling is hard._
 
-The more users and requests you have, the harder it gets to maintain fast, consistent responses. Serving LLMs is one thing, but scaling LLMs brings its own challenges:
+The more users and requests you have, the harder it gets to maintain fast, consistent responses. Serving LLMs is one thing, but scaling LLMs brings its own challenges. Here are a few:
 
-- **Autoscaling**: dynamically adjusting resources without disruption is challenging on stateful, GPU-bound workloads.
-- **Load balancing**: Distributing user requests to the right model instance isn't simple. A user might be mid-conversation with a model, so their next request needs to go to a server that has their context in memory.
-- **Cold starts**: Launching new instances can take minutes, especially with large models that need to be loaded into GPU memory. During that time, users may experience latency spikes or dropped requests.
+- When demand spikes, you need to make more resources available quickly. But dynamically scaling up GPU-bound workloads without dropping requests or disrupting service is complex.
+- You can’t just send incoming requests to any available server. If someone is "chatting" with a model, there could be session context that gets lost. That makes load balancing more complicated than in stateless systems.
+- Spinning up a new model isn’t instant. Large models can take minutes to load into GPU memory, and that might affect user experience.
 
 ## Enter **Fast Inference**: vLLM
 
-With an appreciation for the hurdles LLM inferencing brings, it's easier to see why so many new tools and techniques are emerging to address those challenges. One of the most impactful is **vLLM**.
+With an appreciation for the hurdles LLM inferencing brings, it's easier to see why so many new tools and techniques are emerging to address those challenges.
 
-Originally developed at UC Berkeley, [vLLM is a community-driven open-source LLM inference engine](https://github.com/vllm-project/vllm) working to improve LLM memory efficiency and **throughput**, the rate at which a model can process input requests or generate output over time.
-
-[You can learn about LLM inference performance metrics here](https://symbl.ai/developers/blog/a-guide-to-llm-inference-performance-monitoring/).
+Currently, one of the most impactful is [vLLM](https://github.com/vllm-project/vllm),  an open-source LLM inference engine that improves memory efficiency and throughput, the rate at which a model can process input requests or generate output over time ([learn about LLM inference performance metrics like throughput here](https://symbl.ai/developers/blog/a-guide-to-llm-inference-performance-monitoring/)).
 
 ### What makes vLLM fast?
 
@@ -57,33 +55,33 @@ There are several innovations under the hood that help vLLM achieve high perform
 
 - **[PagedAttention](https://arxiv.org/abs/2309.06180)**: vLLM uses this technique which rethinks how memory is allocated for the attention mechanism, drastically reducing memory fragmentation and overhead. Instead of storing every token's key/value cache in contiguous blocks, PagedAttention lets the model store these in virtual memory “pages,” allowing more requests to run concurrently without running out of GPU memory.
 
-- **[Continuous Batching](https://insujang.github.io/2024-01-07/llm-inference-continuous-batching-and-pagedattention/)**: vLLM can dynamically batch incoming requests together — even if they arrive at different times. That means it can serve many users at once without waiting for batch windows to fill up, dramatically improving throughput without hurting latency.
+- **[Continuous Batching](https://docs.modular.com/glossary/ai/continuous-batching)**: vLLM can dynamically batch incoming requests together — even if they arrive at different times. That means it can serve many users at once without waiting for batch windows to fill up, dramatically improving throughput without hurting latency.
 
 - **Optimized CUDA Kernels**: vLLM includes optimized CUDA kernels to maximize performance on specific GPUs and other hardware. This means better efficiency, translating to cost savings.
 
 So, with vLLM:
 
 - You can serve more concurrent requests using fewer GPUs.
-- You get significantly better _throughput_ compared to naive implementations.
+- You get significantly better throughput compared to other engines.
 - You reduce memory waste, letting you deploy bigger models on the same hardware.
 
 ## Enter **Furious Scaling**: KServe
 
-If vLLM is your high-performance car engine, then **KServe** is like your pit crew. Built on [Kubernetes](https://kubernetes.io/), **KServe** is a powerful open-source platform for deploying, scaling, and managing models in production.
+If vLLM is your high-performance car engine, then **[KServe](https://kserve.github.io/website/master/)** is like your pit crew. Built on [Kubernetes](https://kubernetes.io/), **KServe** is a powerful open-source platform for deploying, scaling, and managing models in production.
 
-Where vLLM optimizes how fast your model does its thing, KServe ensures its accessible and running — even under unpredictable workloads, across multiple model versions, and across the cloud.  It's meant to abstract the complexity of model serving infrastructure while benefiting from all of Kubernetes’ resilience and scaling features.
+While vLLM optimizes how fast your model does its thing, KServe ensures it's accessible and running, under unpredictable workloads, across multiple model versions, and across the cloud.  It abstracts the complexity of model serving infrastructure while benefiting from all of Kubernetes’ resilience and scaling features.
 
 ### How does KServe help?
 
 Some of its key capabilities include:
 
-- **Autoscaling**
-    Automatically scale model instances up or down based on real-time traffic, including support for scaling to zero when idle — reducing unnecessary compute spend.
-- **Multi-model management**
-    Deploy, update, and rollback different model versions with minimal downtime.
-- **Explainer and Transformer integration**
-    KServe can run model explainers or input/output preprocessors alongside the main model.
-- **Advanced routing & traffic splitting**
-    Automatically route traffic to new model versions for canary testing or A/B deployments.
-- **Built-in observability**
-    Exposes Prometheus metrics and integrates with tools like Grafana for monitoring performance, latency, and error rates.
+- **[Autoscaling](https://kubernetes.io/docs/concepts/workloads/autoscaling/)**: Automatically scale model instances up or down based on demand - even to zero when idle, which helps save on costs.
+- **Multi-model management**: Deploy, update, and rollback different model versions with minimal downtime.
+- **Advanced routing**: Automatically route traffic to new model versions for [canary testing](https://kserve.github.io/website/master/modelserving/v1beta1/rollout/canary/) or A/B deployments.
+- **Observability**: Integrates with tools like Grafana for monitoring performance, latency, and error rates.
+
+So, with KServe:
+
+- You can run and manage multiple models at once, within the same system.
+- You can scale those models up or down automatically — even to zero if no one’s using them.
+- You get the benefits of Kubernetes-native features like scalability and fault-tolerance, so your services restart automatically if they crash and scale reliably across clusters.
