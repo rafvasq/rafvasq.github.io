@@ -63,8 +63,6 @@ There are several innovations under the hood that help vLLM achieve high perform
 
 - **Optimized CUDA Kernels**: vLLM includes optimized CUDA kernels to maximize performance on specific GPUs and other hardware. This means better efficiency, translating to cost savings.
 
-## What does this mean in practice?
-
 With vLLM:
 
 - You can serve more concurrent requests using fewer GPUs.
