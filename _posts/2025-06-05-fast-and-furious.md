@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Fast Inference and Furious Scaling with vLLM and KServe"
+date:   2025-06-05
+categories: vllm kserve
+---
+
 _Why serving large language models is hard — and how vLLM + KServe can help beginners get started._
 
 The name "Fast Inference, Furious Scaling", obviously inspired by the movies, is not just catchy, but also captures the pace of this area of technology.  With new optimization techniques, tools emerging daily, and not enough "good first issues", it's a rapidly evolving landscape that often leaves beginners struggling to find their footing.
