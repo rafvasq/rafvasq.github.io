@@ -4,15 +4,13 @@ title: ""
 permalink: /
 ---
 
-Rafael Vasquez is an open-source software developer at IBM, where he currently leads the **IBM Granite Community** on GitHub: maintaining recipes, CI pipelines, and model availability across platforms for every new Granite release.
+I am an open-source software developer at IBM, where I currently lead the **IBM Granite Community** on GitHub: maintaining recipes, CI pipelines, and model availability across platforms for every new Granite release.
 
-Recently, Rafael contributed to **vLLM** and vLLM hardware-enablement plugins for the **IBM Spyre Accelerator** and maintained **KServe/ModelMesh**, deepening his expertise in LLM inference and model serving.
+Recently, I contributed to **vLLM** and vLLM hardware-enablement plugins for the **IBM Spyre Accelerator** and maintained **KServe/ModelMesh**, deepening my expertise in LLM inference and model serving.
 
-Beyond his technical contributions, as a developer advocate he has delivered 10+ talks at international conferences and actively mentors new contributors entering the open-source community.
+Beyond technical contributions, as a developer advocate, I have delivered 10+ talks at international conferences and actively mentor new contributors entering the open-source community.
 
-Rafael holds a MASc with research focused on reinforcement learning and autonomous vehicles, and brings additional experience from the retail data science space, giving him a well-rounded perspective that spans applied research, production ML systems, and open-source leadership.
-
----
+I hold a MASc with research focused on reinforcement learning and autonomous vehicles, and bring additional experience from the retail data science space. This gives me a well-rounded perspective spanning applied research, production ML systems, and open-source leadership.
 
 ### Open-Source Contributions
 
@@ -24,8 +22,6 @@ Rafael holds a MASc with research focused on reinforcement learning and autonomo
     Ranked in the top 12% of ~1,700+ contributors with 15 merged PRs focusing on bug fixes, frontend features, CI linting, and documentation.
 *   **[KServe ModelMesh](https://github.com/kserve/modelmesh)** | *Maintainer (2022–2024)*
     Maintained a production multi-runtime model-serving platform (Triton, TorchServe, MLServer): dependency/gRPC updates, Grafana observability dashboards, FVT test fixtures, and runtime documentation.
-
----
 
 ### Selected Talks
 
