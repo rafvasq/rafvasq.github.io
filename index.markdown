@@ -26,7 +26,7 @@ I hold a MASc with research focused on reinforcement learning and autonomous veh
 ### Selected Talks
 
 I frequently speak at international conferences about open-source AI, large language models, and model serving.
-*   **Fast Inference, Furious Scaling** — *AI.dev EU 2025*
+*   **Fast Inference, Furious Scaling** — *Open Source Summit NA 2025*
 *   **Leveraging Open Source AI Securely and Privately** — *Devopsdays Geneva 2025*
 *   [View all talks & workshops &rarr;](/talks)
 
@@ -34,3 +34,4 @@ I frequently speak at international conferences about open-source AI, large lang
 
 *   **Multi-Objective Autonomous Braking System using Naturalistic Dataset**, *IEEE Intelligent Transportation Systems Conference*, 2019.
 *   **Virtual immersive reality based analysis of behavioural responses in connected and autonomous vehicle environment**, *Mapping the Travel Behavior Genome, Elsevier*, 2020.
+*   **Should I give or should I take? Choice issues in automated vehicle control**, *International Choice Modelling Conference*, 2019.
