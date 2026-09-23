@@ -32,6 +32,6 @@ I frequently speak at international conferences about open-source AI, large lang
 
 ### Publications
 
-*   **Multi-Objective Autonomous Braking System using Naturalistic Dataset**, *IEEE Intelligent Transportation Systems Conference*, 2019.
-*   **Virtual immersive reality based analysis of behavioural responses in connected and autonomous vehicle environment**, *Mapping the Travel Behavior Genome, Elsevier*, 2020.
-*   **Should I give or should I take? Choice issues in automated vehicle control**, *International Choice Modelling Conference*, 2019.
+*   **[Multi-Objective Autonomous Braking System using Naturalistic Dataset](https://scholar.google.ca/citations?view_op=view_citation&hl=en&user=56aipDMAAAAJ&authuser=2&citation_for_view=56aipDMAAAAJ:u-x6o8ySG0sC)**, *IEEE Intelligent Transportation Systems Conference*, 2019.
+*   **[Virtual immersive reality based analysis of behavioural responses in connected and autonomous vehicle environment](https://scholar.google.ca/citations?view_op=view_citation&hl=en&user=56aipDMAAAAJ&authuser=2&citation_for_view=56aipDMAAAAJ:u5HHmVD_uO8C)**, *Mapping the Travel Behavior Genome, Elsevier*, 2020.
+*   **[Should I give or should I take? Choice issues in automated vehicle control](https://scholar.google.ca/citations?view_op=view_citation&hl=en&user=56aipDMAAAAJ&authuser=2&citation_for_view=56aipDMAAAAJ:d1gkVwhDpl0C)**, *International Choice Modelling Conference*, 2019.
